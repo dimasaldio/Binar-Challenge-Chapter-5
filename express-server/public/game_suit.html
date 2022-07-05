@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Game Suit</title>
+    <link rel="stylesheet" href="game_suit.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navigasi">
+      <a href="index.html"><</a>
+      <img src="
+      assets/logo.png" alt="logo">
+      <p>ROCK PAPPER SCISSORS</p>
+    </div>
+
+    <div class="container-isi cf">
+      <div class="pemain">
+        <h1>PLAYER 1</h1>
+        <img src="assets/batu.png" alt="batu" id="batuPlayer">
+        <img src="assets/kertas.png" alt="kertas" id="kertasPlayer">
+        <img src="assets/gunting.png" alt="gunting" id="guntingPlayer">
+      </div>
+
+      <div class="komputer">
+        <h1>COM</h1>
+        <img src="assets/batu.png" alt="batu" id="batuKomputer">
+        <img src="assets/kertas.png" alt="kertas" id="kertasKomputer">
+        <img src="assets/gunting.png" alt="gunting" id="guntingKomputer">
+      </div>
+
+      <p id="versus">VS</p>
+      <button type="button" onclick="document.location.reload()" name="button" id="tombolReset"></button>
+      <p id="liatHasil"></p>
+      <div class="bungkusKomputer">
+
+      </div>
+    </div>
+
+
+
+    <script src="game_suit.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,243 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+body{
+  font-family: 'Open Sans';
+  background-color: #9C835F;
+  margin: 0;
+  padding: 0;
+}
+
+.navigasi{
+  position: relative;
+  margin: 0;
+  max-height: 100px;
+}
+
+.navigasi a{
+  position: relative;
+  width: 55px;
+  height: 87px;
+  left: 7px;
+  top: 20px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 98px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #724C21;
+}
+
+.navigasi img{
+  position: relative;
+  width: 72px;
+  height: 72px;
+  left: 40px;
+  top: 27px;
+}
+
+.navigasi p{
+  position: relative;
+  width: 410px;
+  height: 62px;
+  left: 200px;
+  top: -90px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: #F9B23D;
+}
+
+.container-isi{
+  width: 100%;
+  max-height: 550px;
+  position: relative;
+  top: 30px;
+}
+
+.pemain{
+  width: 50%;
+  float: left;
+  position: relative;
+  max-height: 500px;
+}
+
+.pemain h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  left: 865px;
+  top: 162px;
+}
+
+.pemain img, .komputer img{
+  width: 100px;
+  position: relative;
+  cursor: pointer;
+}
+
+.pemain img:hover{
+  background-color: #C4C4C4;
+  box-shadow: 0px 0px 10px 8px #C4C4C4;
+}
+
+#batuPlayer{
+  top: -25px;
+  left: 325px;
+}
+#kertasPlayer{
+  top: 140px;
+  left: 225px;
+}
+#guntingPlayer{
+  top: 310px;
+  left: 120px;
+}
+.komputer{
+  width: 50%;
+  float: right;
+  position: relative;
+  max-height: 500px;
+}
+.komputer h1{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  left: 865px;
+  top: 162px;
+}
+
+#batuKomputer{
+  top: -25px;
+  left: 325px;
+  cursor: default;
+}
+#kertasKomputer{
+  top: 140px;
+  left: 225px;
+  cursor: default;
+}
+#guntingKomputer{
+  top: 310px;
+  left: 120px;
+  cursor: default;
+}
+
+#versus{
+  position: absolute;
+  width: 296px;
+  height: 186px;
+  left: 625px;
+  top: 70px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 145px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #BD0000;
+}
+
+#tombolReset{
+  position: absolute;
+  width: 77px;
+  height: 71px;
+  left: 730px;
+  top: 550px;
+  cursor: pointer;
+  background:url("assets/refresh.png");
+  background-size: cover;
+  border: none;
+
+}
+
+#liatHasil{
+  position: absolute;
+  width: 270px;
+  height: 165px;
+  left: 640px;
+  top: 205px;
+  background: #4C9654;
+  border-radius: 10px;
+  transform: rotate(-28.87deg);
+  opacity: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: white;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.bungkusBatu{
+  position: absolute;
+  width: 189px;
+  height: 160px;
+  left: 1046px;
+  top: 89px;
+  background: #C4C4C4;
+  border-radius: 30px;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.bungkusKertas{
+  position: absolute;
+  width: 189px;
+  height: 160px;
+  left: 1046px;
+  top: 226px;
+  background: #C4C4C4;
+  border-radius: 30px;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.bungkusGunting{
+  position: absolute;
+  width: 189px;
+  height: 160px;
+  left: 1046px;
+  top: 395px;
+  background: #C4C4C4;
+  border-radius: 30px;
+  z-index: -1;
+  transition: 0.5s;
+}

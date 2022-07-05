@@ -1,0 +1,27 @@
+{"user":[
+    {
+        "username":"naruto",
+        "password":"uzumakiNaruto"
+    },
+    {
+        "username":"sasuke",
+        "password":"uzumakiSasuke"
+    },
+    {
+        "username":"sakura",
+        "password":"uzumakiSakura"
+    },
+    {
+        "username":"kakashi",
+        "password":"uzumakiKakashi"
+    },
+    {
+        "username":"gaara",
+        "password":"uzumakiGaruto"
+    },
+    {
+        "username":"Hinata",
+        "password":"uzumakiHinata"
+    }
+]
+}
